@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://neooxdev.github.io/sitemap.xml
