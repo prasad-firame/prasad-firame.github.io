@@ -1,0 +1,4 @@
+baseURL = "https://neooxdev.github.io/"
+languageCode = "en-us"
+title = "Neoox Dev Blog"
+theme = "PaperMod"
