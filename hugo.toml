@@ -21,9 +21,9 @@ theme = "PaperMod"
   
   # Hacker aesthetic
  [params.homeInfoParams]
-  Title = "Neoox // Dev"
+  Title = "Neo"
   Content = """
-  > Learning from first principles.
+  > Learning from first principles...
 
   """
 
