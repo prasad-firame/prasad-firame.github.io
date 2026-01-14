@@ -1,40 +1,51 @@
-name: Deploy Hugo Site
+name: Deploy static content to Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-deploy:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout repo (with submodules for PaperMod theme)
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-
-      # 2️⃣ Setup Hugo Extended
-      - uses: peaceiris/actions-hugo@v2
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
-      # 3️⃣ Build Hugo site
-      - run: |
+      
+      - name: Build site
+        run: |
           hugo --minify
-          touch public/.nojekyll  # prevent GitHub Pages Jekyll processing
-
-      # 4️⃣ Upload public folder as artifact
-      - uses: actions/upload-pages-artifact@v1
+          touch public/.nojekyll
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: public  # <- NO /* here
-
-      # 5️⃣ Deploy automatically
-      - uses: actions/deploy-pages@v1
+          path: 'public'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
