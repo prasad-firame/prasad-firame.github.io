@@ -1,4 +1,73 @@
 baseURL = "https://neooxdev.github.io/"
 languageCode = "en-us"
-title = "Neoox Dev Blog"
+title = "Neoox // Dev Terminal"
 theme = "PaperMod"
+
+[params]
+  env = "production"
+  description = "Building, breaking, and debugging the future"
+  author = "Neoox"
+  
+  # Dark mode by default
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowWordCount = true
+  
+  # Hacker aesthetic
+  [params.homeInfoParams]
+    Title = "$ whoami"
+    Content = """
+    > Developer. Builder. Problem Solver.
+    
+    Breaking things to understand how they work, then building them better.
+    Documenting the journey from idea to execution.
+    
+    **[root@neoox ~]#** _
+    """
+
+# Navigation with hacker vibes
+[[menu.main]]
+  name = "~/posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  name = "~/tags"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  name = "~/about"
+  url = "/about/"
+  weight = 30
+
+# Social links
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/neooxdev"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/yourhandle"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:your@email.com"
+
+# Better code display
+[params.assets]
+  disableFingerprinting = false
+
+[markup.highlight]
+  anchorLineNos = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
+  style = "monokai"
