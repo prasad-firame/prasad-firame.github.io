@@ -21,10 +21,7 @@ theme = "PaperMod"
   
   # Hacker aesthetic
  [params.homeInfoParams]
-  Title = "Prasad Firame"
   Content = """
-  > Learning from first principles...
-
   """
 
 
@@ -39,10 +36,17 @@ theme = "PaperMod"
   url = "/tags/"
   weight = 20
 
+
+
 [[menu.main]]
   name = "~/about"
   url = "/about/"
   weight = 30
+
+[[menu.main]]
+  name = "~/experience"
+  url = "/experience/"
+  weight = 25
 
 # Social links
 [[params.socialIcons]]
@@ -70,3 +74,8 @@ theme = "PaperMod"
   lineNos = false
   noClasses = false
   style = "monokai"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

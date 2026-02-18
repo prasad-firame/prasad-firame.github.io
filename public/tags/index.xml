@@ -6,27 +6,41 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jan 2026 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://neooxdev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Learning</title>
-      <link>https://neooxdev.github.io/tags/learning/</link>
-      <pubDate>Wed, 14 Jan 2026 12:00:00 +0530</pubDate>
-      <guid>https://neooxdev.github.io/tags/learning/</guid>
+      <title>2PC</title>
+      <link>https://neooxdev.github.io/tags/2pc/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://neooxdev.github.io/tags/2pc/</guid>
       <description></description>
     </item>
     <item>
-      <title>Open-Source</title>
-      <link>https://neooxdev.github.io/tags/open-source/</link>
-      <pubDate>Wed, 14 Jan 2026 12:00:00 +0530</pubDate>
-      <guid>https://neooxdev.github.io/tags/open-source/</guid>
+      <title>Backend</title>
+      <link>https://neooxdev.github.io/tags/backend/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://neooxdev.github.io/tags/backend/</guid>
       <description></description>
     </item>
     <item>
-      <title>Reverse-Engineering</title>
-      <link>https://neooxdev.github.io/tags/reverse-engineering/</link>
-      <pubDate>Wed, 14 Jan 2026 12:00:00 +0530</pubDate>
-      <guid>https://neooxdev.github.io/tags/reverse-engineering/</guid>
+      <title>Consistency</title>
+      <link>https://neooxdev.github.io/tags/consistency/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://neooxdev.github.io/tags/consistency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Databases</title>
+      <link>https://neooxdev.github.io/tags/databases/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://neooxdev.github.io/tags/databases/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transactions</title>
+      <link>https://neooxdev.github.io/tags/transactions/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://neooxdev.github.io/tags/transactions/</guid>
       <description></description>
     </item>
   </channel>
